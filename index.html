@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyber Security Expert | Data Scientist | IoT | AI | Cloud Computing">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,22 +19,22 @@
             color: black;
             text-align: center;
             padding: 2rem 0;
-            position: relative; /* Add this */
+            position: relative;
         }
-    
+
         .header-content h1 {
             font-size: 2.5rem;
         }
 
-        /* Add styles for the round profile picture */
+        /* Profile Picture Styling */
         .profile-picture {
-            width: 100px; /* Adjust the size as needed */
+            width: 100px;
             height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
         }
 
         nav {
@@ -54,6 +58,11 @@
             color: black;
         }
 
+        nav ul li a:hover {
+            color: red;
+            font-weight: bold;
+        }
+
         .section-content {
             background-color: white;
             padding: 2rem;
@@ -69,13 +78,16 @@
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
+            text-align: center;
+            border: 1px solid red;
         }
 
         .download-button:hover {
             background-color: #555;
+            color: white;
         }
 
         footer {
@@ -94,8 +106,8 @@
 <body>
     <header>
         <div class="header-content">
-         <!-- Add your profile picture here -- >
-            <img src="./photo.jpg" alt="Your Profile Picture"
+            <!-- Profile Picture -->
+            <img src="./photo.jpg" alt="Your Profile Picture" class="profile-picture">
             <h1>LOGESHWARAN M</h1>
             <p>DATA SCIENTIST</p>
         </div>
@@ -108,23 +120,20 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
-           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>I'm a <b>cyber security </b>expert and technology enthusiast who is passionate about helping organizations protect their data and create secure online environments. I'm driven by the desire to put technology to work for the greater good and empower individuals and businesses to benefit from the digital revolution. With over 7 years of experience in the field, I'm dedicated to staying up to date with the latest trends and innovations in the <a href="https://techtrainer20.github.io/git_con2/" traget="_target">cyber security </a> landscape. I'm also committed to helping others learn more about the importance of online security and how to stay safe online..</p>
+            <p>I'm a <b>cyber security</b> expert and technology enthusiast who is passionate about helping organizations protect their data and create secure online environments. I'm driven by the desire to put technology to work for the greater good and empower individuals and businesses to benefit from the digital revolution. With over 7 years of experience in the field, I'm dedicated to staying up to date with the latest trends and innovations in the <a href="https://techtrainer20.github.io/git_con2/" target="_blank">cyber security</a> landscape. I'm also committed to helping others learn more about the importance of online security and how to stay safe online.</p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p>M.Sc.,M.Phil</p>
-            
-            
+            <p>M.Sc., M.Phil</p>
         </div>
     </section>
 
@@ -132,15 +141,15 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>CyberSecurity</li>
+                <li>Cyber Security</li>
                 <li>Internet of Things</li>
                 <li>Cloud Computing</li>
                 <li>Python</li>
-                <li>IBM cloud</li>
+                <li>IBM Cloud</li>
                 <li>ML & AI</li>
-                <li>java</li>
-                <li>c++</li>
-                <li>Java script</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
             </ul>
         </div>
     </section>
@@ -149,24 +158,19 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">AI Based alternator control system</a></li>
-                <li><a href="#">Cloud Security IBM</a></li>
-                <li><a href="#">IBM chetbot</a></li>
-                <li><a href="#">chetbot</a></li> 
-                <!-- Add more project links here -->
+                <li><a href="#">AI-Based Alternator Control System</a></li>
+                <li><a href="#">Cloud Security with IBM</a></li>
+                <li><a href="#">IBM Chatbot</a></li>
+                <li><a href="#">Chatbot</a></li>
             </ul>
         </div>
     </section>
 
     <section id="resume">
-    
         <div class="section-content">
-            <center>
             <h2>Resume</h2>
             <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
         </div>
-        
     </section>
 
     <footer>
