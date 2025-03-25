@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cyber Security Expert | Data Scientist | IoT | AI | Cloud Computing">
-    
+    <title>Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,22 +17,22 @@
             color: black;
             text-align: center;
             padding: 2rem 0;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 120px; /* Adjust size */
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px; /* Space between image and text */
         }
 
         .header-content h1 {
             font-size: 2.5rem;
-        }
-
-        /* Profile Picture Styling */
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            position: absolute;
-            top: 75px;
-            left: 75px;
+            margin: 0;
         }
 
         nav {
@@ -58,11 +56,6 @@
             color: black;
         }
 
-        nav ul li a:hover {
-            color: red;
-            font-weight: bold;
-        }
-
         .section-content {
             background-color: white;
             padding: 2rem;
@@ -78,16 +71,12 @@
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 20px;
-            display: block;
-            width: fit-content;
-            margin: 10px auto;
-            text-align: center;
-            border: 1px solid red;
+            display: inline-block;
+            margin-top: 10px;
         }
 
         .download-button:hover {
             background-color: #555;
-            color: white;
         }
 
         footer {
@@ -141,7 +130,7 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>Cyber Security</li>
+                <li>CyberSecurity</li>
                 <li>Internet of Things</li>
                 <li>Cloud Computing</li>
                 <li>Python</li>
@@ -168,8 +157,10 @@
 
     <section id="resume">
         <div class="section-content">
-            <h2>Resume</h2>
-            <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
+            <center>
+                <h2>Resume</h2>
+                <a href="./mycv.pdf" target="_blank" class="download-button">Download CV</a>
+            </center>
         </div>
     </section>
 
@@ -182,10 +173,8 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop,
